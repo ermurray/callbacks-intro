@@ -1,10 +1,9 @@
 const findWaldo = function(names, found) {
-  for (let i = 0; i < names.length; i++) {
-    let name = names[i];
+  names.forEach((name, i)=> {
     if (name === "Waldo") {
       found(i);   // execute callback
     }
-  }
+  });
 };
 
 
